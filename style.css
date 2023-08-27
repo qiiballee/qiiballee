@@ -261,12 +261,43 @@ h3{
     width: 70%;
     background-color: red;
 }
-.react{
+.MYSQL{
+    width: 85%;
+    background-color: red;
+}
+.ANALYTIC{
+    width: 90%;
+    background-color: red;
+}
+.MAINTENANCE{
     width: 80%;
     background-color: red;
 }
-
-
+.PLC{
+    width: 78%;
+    background-color: red;
+}
+.PROBLEM{
+    width: 80%;
+    background-color: red;
+}
+.SOLVING{
+    width: 90%;
+    background-color: red;
+}
+.HARD{
+    width: 89%;
+    background-color: red;
+}
+.ASEMBLY
+{
+    width: 90%;
+    background-color: red;
+}
+.SCHEMATIC{
+    width: 80%;
+    background-color: red;
+}
 
 @media only screen and (min-width:1920px)
 { 
