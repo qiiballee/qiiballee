@@ -18,8 +18,9 @@ nav{
     padding-bottom: 10px;
     padding-right: 8%;
     padding-left: 8%;
-    background-color: #191919;
-    border-bottom: 1px solid red;
+    background: rgb(253,255,237);
+background: linear-gradient(90deg, rgba(253,255,237,1) 0%, rgba(134,74,14,1) 48%, rgba(255,245,248,1) 100%);
+    border-bottom: 5px solid black;
    
 }
 .logo{
@@ -161,7 +162,7 @@ h3{
     font-size: 18px;
     margin-bottom: 45px;
     text-align: justify;
-    padding-left: ;
+
 }
 .button{
     background-color: red;
@@ -315,12 +316,8 @@ h3{
 { 
     .home{
        
-        background-color: #eaeaea;
-            background-image: linear-gradient(95deg,blue,red );
-            
-            background-size: 200%;
-            animation: gradient-animation 5s
-    
+        background-color: wheat;
+        
     }
     .logo{
         width: 30%;
@@ -338,7 +335,7 @@ h3{
         padding-right: 8%;
         padding-left: 8%;
         background-color: #191919;
-        border-bottom: 1px solid red;
+        border-bottom: 3px solid black;
     }
     nav ul li {
         list-style-type: none;
