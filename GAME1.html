@@ -1,0 +1,41 @@
+<html>
+        <body>
+             <center> <h1> Hai kamu! </h1></center>
+            <center>><img src= "https://media.tenor.com/K_FndTKVFTAAAAAi/peachcat-cat.gif"/></center>
+            <center><h1> Maukah kamu menjadi pasangan ku ?</h1>
+             <center>  <button  id="btn_mau" onclick="alert(`I LOVE YOU, NYUAKSS`)"><a href=""></a>Mau</button>
+            <button id="btn_gamau" onclick="gamau(this)" style="position:">
+              Gamau
+            </button>
+            <div class=" kembali">
+                <button>
+                    <a href="Fitur.html">Kembali Ke Fitur</a>
+                </button>
+                
+            </div>
+        </body>
+    <script>
+        Function gamau (id){
+            var gamau = document.getElementById("btn_gamau");
+            var i  = Math.floor(Math.random() * 300) + 1;
+            var j  = Math.floor(Math.random() * 100) +  gamau.offsetTop;
+            id.style.left = I + "px";
+            id.style.top = j + "px";
+        }
+    </script>
+    <style>
+        *{
+            text-decoration: none;
+
+        }
+        .kembali{
+            padding-top: 5px;
+            color: black;
+
+        }
+        body{
+            background-color: wheat;
+        }
+    </style>
+
+</html>

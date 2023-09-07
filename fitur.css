@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.Home{
+    background-color: white;
+    width: auto;
+    height: 1080px;
+} 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 8%;
+    padding-left: 8%;
+    background: rgb(253,255,237);
+    background: linear-gradient(90deg, rgba(253,255,237,1) 0%, rgba(134,74,14,1) 48%, rgba(255,245,248,1) 100%);
+    border-bottom: 5px solid black;
+   
+}
+nav h2{
+    color: white;
+}
+nav i{
+    padding-right: 9px;
+    color: brown;
+}
+div ul li{
+    margin-top: 250px;
+    list-style-type: none;
+    display: inline-block;
+    padding:10px 10px;
+}
+div ul li a{
+    font-size: 30px;
+    background-color: red;
+    color: wheat;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
