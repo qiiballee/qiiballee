@@ -38,8 +38,27 @@ div ul li a{
     font-size: 30px;
     background-color: red;
     color: wheat;
-    border: 2px solid white;
+    border: 2px solid wheat;
     font-weight: bold;
     padding: 5px 15px;
     border-radius: 30px;
+}
+.kembali{ 
+    font-size: 30px;
+    background-color: red;
+    color: wheat;
+    border: 2px solid wheat;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 30px;
+    margin-top: 250px;
+    padding:10px 10px;
+    list-style-type: none;
+    display: inline-block;
+    justify-content: center;
+    
+}
+.kembali a{
+    color: white;
+    
 }
