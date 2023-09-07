@@ -1,15 +1,15 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 0px;
     text-decoration: none;
 }
-.me{
-    height: 100vh;
-    width: 100%;
+.about-me{
     background-color: white;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(73,19,2,1) 48%, rgba(0,212,255,1) 100%);}
-nav{
+    width: auto;
+    height: 1080px;
+
+}
+.logo{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,11 +17,57 @@ nav{
     padding-bottom: 10px;
     padding-right: 8%;
     padding-left: 8%;
-    background-color: white;
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,159,80,1) 44%, rgba(0,212,255,1) 100%);
-    border-bottom: 5px solid red;
+    background: rgb(253,255,237);
+background: linear-gradient(90deg, rgba(253,255,237,1) 0%, rgba(134,74,14,1) 48%, rgba(255,245,248,1) 100%);
+    border-bottom: 5px solid black;
+    color: black;
+    font-size: 35px;
 }
-.logo{
-    font-size: 20px;
+i{
+    color: black;
+   
 }
+.isi p{
+    padding-top: 20px;
+}
+.isi img{
+   
+    width:300px;
+    height:400px;
+    padding-top: 20px;
+    border: 20px;
+    border-radius: 5px solid red ;
+ }
+ .isi i{padding-top: 20px;
+    
+    
+    color: black
+ }
+ .isi a{
+    font-size: 25px;
+    font: bold;
+    background-color: wheat;
+    color: black;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 30px;
+    transition: 2s;
+ }
+ .isi a i :hover{
+    transform: scale(1.2);
+    border: 2px solid red;
+    background-color: transparent;
+ }
+@media only screen and (min-width: 1080px){
+
+}
+
+@media only screen and (max-width:400px){
+.isi img{
+   
+   width:200px;
+   height:300px; ;
+}
+}
+    
