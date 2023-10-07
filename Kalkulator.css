@@ -14,33 +14,26 @@ body {
     border: 2px solid #333;
     border-radius: 10px;
     background-color: #333;
-    width: 300px;
+    width: 400px;
     padding: 10px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.display {
-    font-size: 36px;
-    color: #fff;
-    margin-bottom: 10px;
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    background-color: #f3f3f3;
 }
 
 button {
-    font-size: 24px;
+    font-size: 18px;
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
-}
-
-.operator {
-    background-color: #ff8533;
-    color: #fff;
-}
-
-.number {
     background-color: #666;
     color: #fff;
 }
@@ -48,16 +41,15 @@ button {
 button:hover {
     background-color: #555;
 }
-
-.bawah{
-    font-size: 30px;
-    background-color: red;
-    color: wheat;
-    border: 2px solid wheat;
-    font-weight: bold;
-    padding: 5px 15px;
-    border-radius: 30px;   
+.Bawah{
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #666;
+    color: #fff;
 }
-.bawah a{
-    color: wheat;
+.Bawah a{
+    color: white;
 }
