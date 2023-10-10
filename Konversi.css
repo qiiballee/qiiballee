@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+select, input, button {
+    margin: 5px 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.home{
+    padding: 20px 0;
+}
+
+
+.isi{
+    background-color: black;
+    background-image: linear-gradient(wheat,brown);
+    height: 720px;
+    width: 100%;
+
+}
+span{
+    color: black;
+}
+.logo{
+    width: 30%;
+        color: bisque;
+        font-size: 30px;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-right: 8%;
+    padding-left: 8%;
+    background-color : wheat;
+    background-image: linear-gradient( wheat, black);
+    color: red;
+    border-bottom: 1px solid red;
+}
+.kembali{
+    font-size: 20px;
+    background: red;
+    color: black;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px solid black;
+    transition: .5s;
+    padding-top: 40;
+    
+}
+
+.kembali a{
+    color: black;
+}
+.kembali i{
+    padding-right: 5px;
+}
