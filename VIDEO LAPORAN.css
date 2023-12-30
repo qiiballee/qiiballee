@@ -1,0 +1,22 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 8%;
+    padding-left: 8%;
+    background: rgb(253,255,237);
+    background: linear-gradient(90deg, rgba(253,255,237,1) 0%, rgba(134,74,14,1) 48%, rgba(255,245,248,1) 100%);
+    border-bottom: 5px solid black;
+   
+}
+.logo{
+    color: whitesmoke;
+}
+@media only screen and (max-width:400px){
+    div iframe{
+        width: 300px;
+        height: 220px;
+    }
+}
