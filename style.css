@@ -315,6 +315,9 @@ h3{
 
 @media only screen and (max-width:400px)
 { 
+    span{
+        color: whitesmoke;
+    }
     .home{
        
         background-color: wheat;
