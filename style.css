@@ -19,7 +19,7 @@ nav{
     padding-right: 8%;
     padding-left: 8%;
     background: rgb(253,255,237);
-background: linear-gradient(90deg, rgba(253,255,237,1) 0%, rgba(134,74,14,1) 48%, rgba(255,245,248,1) 100%);
+    background: linear-gradient(90deg, rgba(253,255,237,1) 0%, rgba(134,74,14,1) 48%, rgba(255,245,248,1) 100%);
     border-bottom: 5px solid black;
    
 }
@@ -198,7 +198,7 @@ h3{
     min-height: 400px;
 }
 .card{
-    height: 365px;
+    height: 300px;
     width: 270px;
     padding: 20px 35px;
     background: #141414;
@@ -229,6 +229,7 @@ h3{
     font-weight: bold;
     padding: 9px 22px;
     border-radius: 30px;
+    
 }
 .skill{ background: white;
         width:  100%;
@@ -394,9 +395,9 @@ h3{
         width: 550px;
         max-width: 95%;
         margin: 0 auto;
-        display: flex;
+        display: grid;
         align-items:center;
-        justify-content: space-between;
+        justify-content: center;
     }
     .about-me img{
         height: auto;
@@ -461,7 +462,7 @@ h3{
         text-align: center;
     }
     .box {
-        display: flex;
+        display: grid;
         justify-content: center;
         align-items: center;
         min-height: 200px;
@@ -472,11 +473,12 @@ h3{
         padding: 20px 35px;
         background: #141414;
         border-radius: 15px;
-        margin: 10px;
+        margin: 15px;
         position: relative;
         overflow: hidden;
         text-align: center;
         border: 1px solid red;
+        
     }
     .card i{
         font-size: 25px;
@@ -489,6 +491,7 @@ h3{
         color: white;
         font-size: 10px;
         margin-bottom: 8px;
+        padding-bottom: 7px;
         
     }
     .pra p a{
