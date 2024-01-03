@@ -1,0 +1,166 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.about-me{
+    padding-top: 50px;
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.about-me img{
+    height: auto;
+    width: 430px;
+    border-radius: 10px;
+    border: 2px solid red;
+}
+.about-text{
+    width: 550px;
+}
+.about-text h2{
+    color: #191919;
+    font-size: 65px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    border-bottom: 5px solid red;
+
+}
+.about-text h5{
+    color: #000;
+    letter-spacing: 1px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    text-align: justify;
+
+}
+.button{
+    background-color: red;
+    color: wheat;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .5s;
+    
+}
+.button:hover{
+    background-color: black;
+    border: 2px solid red;
+    cursor: pointer;
+}
+.kembali{
+    margin-top: 20px;
+    background-color: red;
+    color: wheat;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .5s;
+    text-decoration: none;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 40px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 8%;
+    padding-left: 8%;
+    background: rgb(253,255,237);
+background: linear-gradient(90deg, rgba(253,255,237,1) 0%, rgba(134,74,14,1) 48%, rgba(255,245,248,1) 100%);
+    border-bottom: 5px solid black;
+    color: black;
+    font-size: 35px;
+}
+.bkprmi{
+    color: rgb(6, 54, 6);
+}
+.FORMADIKSI{
+    color: blue;
+}
+@media only screen and (max-width:400px){
+    .about-me{
+        width: 550px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: grid;
+        align-items:center;
+        justify-content: center;
+    }
+    .about-me img{
+        height: auto;
+        width: 200px;
+        border-radius: 10px;
+        border: 2px solid red;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-text{
+        width: 250px;
+    }
+    .about-text h2{
+        color: #191919;
+        font-size: 50px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        border-bottom: 5px solid red;
+    
+    }
+    .about-text h5{
+        color: #000;
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-bottom: 25px;
+        text-transform: capitalize;
+    }
+    .about-text p{
+        color: black;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 45px;
+        text-align: justify;
+    }
+    .button{
+        background-color: red;
+        color: wheat;
+        border: 2px solid black;
+        font-weight: bold;
+        padding: 10px 27px;
+        border-radius: 30px;
+        transition: .5s;
+        font-size: small;
+    }
+    .button:hover{
+        background-color: black;
+        border: 2px solid red;
+        cursor: pointer;
+    }
+    .kembali{
+       margin-left: 20%;
+       margin-right: 20%;
+        
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .about-text .FORUM{
+        font-size: 30px;
+    }
+}
