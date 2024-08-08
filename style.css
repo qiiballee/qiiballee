@@ -7,7 +7,10 @@
 .home{
     height: 100vh;
     width: 100%;
-    background-color: wheat;
+    background-image: url(walllaptop1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
 }
 
 nav{
@@ -18,9 +21,11 @@ nav{
     padding-bottom: 10px;
     padding-right: 8%;
     padding-left: 8%;
-    background: rgb(253,255,237);
-    background: linear-gradient(90deg, rgba(253,255,237,1) 0%, rgba(134,74,14,1) 48%, rgba(255,245,248,1) 100%);
-    border-bottom: 5px solid black;
+    background-image: url(walllaptop1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    border-bottom: 10px solid whitesmoke;
    
 }
 .logo{
@@ -29,9 +34,10 @@ nav{
     font-size: 25px;
     letter-spacing: 0.5px;
     cursor: pointer;
+     text-shadow: 10px 10px 20px white,-10px -10px 20px white;
 }
 span{
-    color: red;
+    color: grey;
 }
 nav ul li {
     list-style-type: none;
@@ -44,25 +50,38 @@ nav ul li a{
     font-weight: bold;
     font-size: 16px;
     text-transform: capitalize;
+    
+}
+nav ul li a i{
+    padding-right: 2px;
 }
 nav ul li a:hover {
-    color: red;
+    text-shadow: 10px 10px 20px black,-10px -10px 20px black;
+    color: whitesmoke;
     transition: 0.5s;
 }
-.btn{
-    background-color: red;
-    color: wheat;
-    border: 2px solid white;
-    font-weight: bold;
-    padding: 5px 15px;
-    border-radius: 30px;
-    transition: transform .5s;
+nav li ul.dropdown li{
+    display: block;
+    text-shadow: 10px 10px 20px black, -10px -10px 20px black;
 }
-.btn:hover{
-    transform: scale(1.2);
-    border: 2px solid red;
-    background-color: transparent;
+nav ul li ul.dropdown {
+    width: 190px;
+    background-image: url(walllaptop2.png);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-radius: 20px;
+    border-left: 5px solid whitesmoke;
+    border-right: 5px solid whitesmoke;
+
 }
+nav ul li a:hover{
+    background: whitesmoke;
+    border-radius: 15px;
+}
+nav ul li:hover ul.dropdown{
+    display: block;}
+
 .image {
     width: 50%;
     height: 75%;
@@ -72,6 +91,21 @@ nav ul li a:hover {
     transform: rotateY(180d3g);
     
     
+}
+.wa{
+    color: green;
+}
+.ig{
+    color: rgb(238, 85, 110);
+}
+.fc{
+    color: rgb(83, 83, 252);
+}
+.link{
+    color: blue;
+}
+.x{
+    color: black;
 }
 .image img {
     height: 100%;
@@ -90,9 +124,10 @@ nav ul li a:hover {
 
 }
 h4{
-    color: red;
+    color: grey;
     letter-spacing: 2px;
     font-size: 20px;
+    text-shadow: 10px 10px 20px white,-10px -10px 20px white;
 }
 h1{
     color: black;
@@ -118,10 +153,143 @@ h3{
     background: transparent;
     border: 2px solid red;
 }
+.index1{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+}
+.section {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    background-image: url(walllaptop2.png);
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+}
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slide{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slide input{
+    display: none;
+}
+.st{ font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20%;
+    transition: 2s;
+}
+.st img{
+    width: 800px;
+    height: 500px;
+}
+.nav-m{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    justify-content: center;
+    display: flex;
+
+}
+.m-btn{
+    border: 2px solid grey;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn:not(:last-child){
+    margin-right: 30px;
+}
+.m-btn:hover{
+    background-color: grey;
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+#radio4:checked ~.first{
+    margin-left: -60%;
+}
+.nav-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 30px;
+    justify-content: center;
+}
+#radio1:checked~.nav-auto .a-b1{
+    background-color: blanchedalmond;
+}
+#radio2:checked~.nav-auto .a-b2{
+    background-color: blanchedalmond;
+}
+#radio3:checked~.nav-auto .a-b3{
+    background-color: blanchedalmond;
+}
+#radio4:checked~.nav-auto .a-b4{
+    background-color: blanchedalmond;
+}
+.head{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: whitesmoke;
+    text-shadow: 10px 10px 20px black, -10px -10px 20px black;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   background-image: url(walllaptop2.png);
+   border-radius: 20px;
+   border: 2px solid white;
+   
+
+   
+}
+.jalankata{
+    background-color: whitesmoke;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+                    /*HALAMAN KETIGA*/
+
 .about{
     width: 100%;
     padding: 100px 0;
-    background-color: whitesmoke;
+    background-image: url(walllaptop2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
 }
 .about-me{
     width: 1130px;
@@ -135,17 +303,18 @@ h3{
     height: auto;
     width: 430px;
     border-radius: 10px;
-    border: 2px solid red;
+    border: 2px solid whitesmoke;
 }
 .about-text{
     width: 550px;
 }
 .about-text h2{
-    color: #191919;
+    color: white;
     font-size: 65px;
     text-transform: capitalize;
     margin-bottom: 20px;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid whitesmoke;
+     text-shadow: 10px 10px 20px grey,-10px -10px 20px grey;
 
 }
 .about-text h5{
@@ -165,8 +334,8 @@ h3{
 
 }
 .button{
-    background-color: red;
-    color: wheat;
+    background-color: grey;
+    color: whitesmoke;
     border: 2px solid black;
     font-weight: bold;
     padding: 13px 30px;
@@ -174,12 +343,17 @@ h3{
     transition: .5s;
 }
 .button:hover{
-    background-color: black;
-    border: 2px solid red;
+    
+    text-shadow: 10px 10px 20px black,-10px -10px 20px black;
+    background-color: white;
+    border: 2px solid black;
     cursor: pointer;
 }
 .service{
-    background: #101010;
+    background-image: url(walllaptop2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
     width: 100%;
     padding: 100px 0;
 
@@ -190,6 +364,7 @@ h3{
     width: 100%;
     margin-bottom: 30px auto;
     text-align: center;
+    text-shadow: 10px 10px 20px grey,-10px -10px 20px grey;
 }
 .box {
     display: flex;
@@ -207,39 +382,52 @@ h3{
     position: relative;
     overflow: hidden;
     text-align: center;
-    border: 1px solid red;
+    border: 1px solid white;
 }
 .card i{
+    padding-bottom: 20px;
     font-size: 50px;
     display: block;
     text-align: center;
     margin: 25px 0;
-    color: red;
+    color: white;
+    text-shadow: 10px 10px 20px grey,-10px -10px 20px grey;
 }
 .card h5{
+    padding-bottom: 55px;
     color: white;
     font-size: 23px;
     margin-bottom: 15px;
 }
 
 .pra p a{
-    background-color: red;
-    color: wheat;
+    background-color: grey;
+    color: white;
     border: 2px solid white;
     font-weight: bold;
     padding: 9px 22px;
     border-radius: 30px;
     
 }
-.skill{ background: white;
+.pra p a:hover{
+    text-shadow: 10px 10px 20px black,-10px -10px 20px black;
+    background-color: whitesmoke;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+.skill{ 
+        background-image: url(walllaptop2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: border-box;
         width:  100%;
         padding: 100px 0;
 }
 .title h2{
-    color: wheat;
+    color: white;
 }
 .skill-bar {
-    padding-top: 10px;
+   
     padding-bottom: 10px;
     color: white;
 }
@@ -251,61 +439,65 @@ h3{
     width: 100%;
     background-color: white;
 }
+.skill h5{padding-bottom: 0px;}
 .html{
     width: 90%;
-    background-color: red;
+    background-color: grey;
 }
 .css{
     width: 80%;
-    background-color: red;
+    background-color: grey;
 }
 .javascript{
     width: 70%;
-    background-color: red;
+    background-color: grey;
 }
 .MYSQL{
     width: 85%;
-    background-color: red;
+    background-color: grey;
 }
 .ANALYTIC{
     width: 90%;
-    background-color: red;
+    background-color: grey;
 }
 .MAINTENANCE{
     width: 80%;
-    background-color: red;
+    background-color: grey;
 }
 .PLC{
     width: 78%;
-    background-color: red;
+    background-color: grey;
 }
 .PROBLEM{
     width: 80%;
-    background-color: red;
+    background-color: grey;
 }
 .SOLVING{
     width: 90%;
-    background-color: red;
+    background-color: grey;
 }
 .HARD{
     width: 89%;
-    background-color: red;
+    background-color: grey;
 }
 .ASEMBLY
 {
     width: 90%;
-    background-color: red;
+    background-color: grey;
 }
 .SCHEMATIC{
     width: 80%;
-    background-color: red;
+    background-color: grey;
 }
 
 @media only screen and (min-width:1920px)
 { 
     .home{
        
-        background-color: wheat;
+        background-image: url(walllaptop2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: border-box;
         
     }
     
@@ -315,22 +507,27 @@ h3{
 
 @media only screen and (max-width:400px)
 { 
-    span{
-        color: whitesmoke;
-    }
+    
     .home{
        
-        background-color: wheat;
-        
+        background-image: url(wallhp1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: border-box;
     }
     .logo{
         width: 30%;
-        color: white;
-        font-size: 15px;
+        color: black;
+        font-size: 10px;
         letter-spacing: 0.5px;
         cursor: pointer;
+        padding-right: 10px;
     }
     nav{
+         background-image: url(wallhp2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: border-box;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -356,7 +553,7 @@ h3{
         transition: transform .5s;
     }
     nav ul li a{
-        color: white;
+        color: black;
         font-weight: bold;
         font-size: 8px;
         text-transform: capitalize; 
@@ -393,6 +590,12 @@ h3{
         border-radius: 30px;
         border: 2px solid black;
         transition: .5s;
+    }
+    .about{
+        background-image: url(wallhp2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: border-box;
     }
     .about-me{
         width: 550px;
@@ -452,7 +655,10 @@ h3{
         cursor: pointer;
     }
     .service{
-        background: #101010;
+        background-image: url(wallhp2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: border-box;
         width: 100%;
         padding: 100px 0;
     
@@ -471,9 +677,9 @@ h3{
         min-height: 200px;
     }
     .card{
-        height: 250px;
-        width: 230px;
-        padding: 20px 35px;
+        height: 270px;
+        width: 130px;
+        padding: 10px 25px;
         background: #141414;
         border-radius: 15px;
         margin: 15px;
@@ -484,20 +690,23 @@ h3{
         
     }
     .card i{
-        font-size: 25px;
+        padding-top: 50px;
+        font-size: 15px;
         display: block;
         text-align: center;
         margin: 12px 0;
-        color: red;
+         text-shadow: 5px 5px 10px grey,-5px -5px 10px grey;
     }
     .card h5{
+       
         color: white;
         font-size: 10px;
         margin-bottom: 8px;
-        padding-bottom: 7px;
+        padding-bottom: 30px;
         
     }
     .pra p a{
+       
         background-color: red;
         color: wheat;
         border: 2px solid white;
@@ -509,14 +718,135 @@ h3{
        
     }
     .title h2{
-        color: blue;
+        color: white;
     }
     .pra p a{
-        background-color: red;
+        background-color: grey;
         color: wheat;
         border: 2px solid white;
         font-weight: bold;
         padding: 9px 22px;
         border-radius: 30px;
+    }
+    .skill{
+        
+        background-image: url(wallhp2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: border-box;
+    }
+    .slider{
+        width: 200px;
+        height: 250px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .slide{
+        width: 100%;
+        height: 50px;
+        display: flex;
+    }
+    .slide input{
+        display: none;
+    }
+    .st{ font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 20%;
+        transition: 2s;
+    }
+    .st img{
+        width: 200px;
+        height: 250px;
+    }
+    .nav-m{
+        position: absolute;
+        width: 150px;
+        margin-top: -30px;
+        justify-content: center;
+        display: flex;
+    
+    }
+    .m-btn{
+        margin-left: 20px;
+        justify-content: center;
+        align-items: center;
+        padding-left: -80px;
+        margin-top: 279px;
+        border: 2px solid grey;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .m-btn:not(:last-child){
+        margin-right: 10px;
+    }
+    .m-btn:hover{
+        background-color: grey;
+    }
+    #radio1:checked ~.first{
+        margin-left: 0;
+    }
+    #radio2:checked ~.first{
+        margin-left: -40%;
+    }
+    #radio3:checked ~.first{
+        margin-left: -60%;
+    }
+    #radio4:checked ~.first{
+        margin-left: -80%;
+    }
+    .nav-auto{
+        position: absolute;
+        width: 220px;
+        margin-top: 300px;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-auto div{
+        padding-right: 40px ;
+        border: 2px solid blue;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    .nav-auto div:not(:last-child){
+        margin-right: 30px;
+        justify-content: center;
+    }
+    .head{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 10px;
+        color: whitesmoke;
+        text-shadow: 10px 10px 20px black, -10px -10px 20px black;
+       display: grid;
+       align-items: center;
+       justify-content: center;
+       background-image: url(walllaptop2.png);
+       border-radius: 5px;
+       border: 2px solid white;
+       
+    
+       
+    }
+    .jalankata{
+        background-color: whitesmoke;
+        border: 3px solid black;
+        border-radius: 5px;
+        font-size: 7px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .sett .card h5{
+        padding-bottom: 10px;
+    }
+    .sett .card i{
+        padding-top: 5px;
+    }
+    .index1 .section{
+        background-image: url(wallhp2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: border-box;
     }
 }
