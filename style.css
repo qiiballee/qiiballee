@@ -34,10 +34,10 @@ nav{
     font-size: 25px;
     letter-spacing: 0.5px;
     cursor: pointer;
-     text-shadow: 10px 10px 20px white,-10px -10px 20px white;
+    text-shadow: 10px 10px 20px rgb(29, 29, 29),-10px -10px 20px rgb(29, 29, 29);
 }
 span{
-    color: grey;
+    color: rgb(29, 29, 29);
 }
 nav ul li {
     list-style-type: none;
@@ -46,6 +46,7 @@ nav ul li {
 
 }
 nav ul li a{
+    text-shadow: 10px 10px 20px rgb(29, 29, 29),-10px -10px 20px rgb(29, 29, 29);
     color: white;
     font-weight: bold;
     font-size: 16px;
@@ -95,6 +96,12 @@ nav ul li:hover ul.dropdown{
 .wa{
     color: green;
 }
+.lpp{
+    color: rgb(4, 73, 4);
+}
+.irm{
+    color: yellow;
+}
 .ig{
     color: rgb(238, 85, 110);
 }
@@ -124,20 +131,22 @@ nav ul li:hover ul.dropdown{
 
 }
 h4{
-    color: grey;
+    color: whitesmoke;
     letter-spacing: 2px;
     font-size: 20px;
-    text-shadow: 10px 10px 20px white,-10px -10px 20px white;
+    text-shadow: 10px 10px 20px rgb(29, 29, 29),-10px -10px 20px rgb(29, 29, 29);
 }
 h1{
-    color: black;
+    color: whitesmoke;
     font-size: 30px;
     margin: 15px 0 15px;
+    text-shadow: 10px 10px 20px rgb(29, 29, 29),-10px -10px 20px rgb(29, 29, 29);
 }
 h3{
-    color: #191919;
+    color: whitesmoke;
     font-size: 25px;
     margin-bottom: 50px;
+    text-shadow: 10px 10px 20px rgb(29, 29, 29),-10px -10px 20px rgb(29, 29, 29);
 }
 .content a {
     font-size: 20px;
@@ -366,11 +375,12 @@ h3{
     text-align: center;
     text-shadow: 10px 10px 20px grey,-10px -10px 20px grey;
 }
-.box {
+ .box {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 400px;
+    
 }
 .card{
     height: 300px;
@@ -382,7 +392,7 @@ h3{
     position: relative;
     overflow: hidden;
     text-align: center;
-    border: 1px solid white;
+    border: 1px solid white;flex-direction: row;
 }
 .card i{
     padding-bottom: 20px;
@@ -422,6 +432,7 @@ h3{
         background-clip: border-box;
         width:  100%;
         padding: 100px 0;
+        
 }
 .title h2{
     color: white;
@@ -607,7 +618,7 @@ h3{
     }
     .about-me img{
         height: auto;
-        width: 200px;
+        width: 150px;
         border-radius: 10px;
         border: 2px solid red;
         justify-content: center;
@@ -700,23 +711,12 @@ h3{
     .card h5{
        
         color: white;
-        font-size: 10px;
+        font-size: 0.2em;
         margin-bottom: 8px;
         padding-bottom: 30px;
         
     }
-    .pra p a{
-       
-        background-color: red;
-        color: wheat;
-        border: 2px solid white;
-        font-weight: bold;
-        font-size: 10px;
-        padding: 2px 6px;
-        border-radius: 10px;
-        
-       
-    }
+   
     .title h2{
         color: white;
     }
@@ -727,6 +727,7 @@ h3{
         font-weight: bold;
         padding: 9px 22px;
         border-radius: 30px;
+        font-size: 10px;
     }
     .skill{
         
