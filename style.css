@@ -640,16 +640,17 @@ h3{
         transform: rotateY(180d3g);
     }
     h4{
+        color:  rgb(29, 29, 29);
         letter-spacing: 2px;
         font-size: 15px;
     }
     h1{
-        color: black;
+        color:  rgb(29, 29, 29);
         font-size: 25px;
         margin: 15px 0 15px;
     }
     h3{
-        color: #191919;
+         color:  rgb(29, 29, 29);
         font-size: 15px;
         margin-bottom: 50px;
     }
