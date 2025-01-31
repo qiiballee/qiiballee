@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-
+    font-family: "Lora", serif;
 }
 .home{
     height: 100vh;
@@ -26,7 +26,27 @@ nav{
     background-size: cover;
     background-clip: border-box;
     border-bottom: 10px solid whitesmoke;
-   
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: slideup 1s forwards;
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+}@keyframes slideup {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px);
+}
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+       
+}
 }
 .logo{
     width: 30%;
@@ -121,15 +141,52 @@ nav ul li:hover ul.dropdown{
     bottom: 0;
     right: 10%;
     transform: translateX(20%);
+    -webkit-transform: translateX(20%);
+    -moz-transform: translateX(20%);
+    -ms-transform: translateX(20%);
+    -o-transform: translateX(20%);
+    opacity: 0;
+    transform: translateX(100px); /* Mulai di luar layar ke kanan */
+    animation: slideIn 1s forwards;
+    
 }
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100px); /* Mulai di luar layar */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Posisikan di tempat semula */
+    }
+}
+
+
 .content{
     position: absolute;
     flex-wrap: wrap;
     top: 60%;
     left: 8%;
     transform: translateY(-50%);
-
+    -o-transform: translateX(-100px);
+    opacity: 0;
+    transform: translateX(-100px);
+    /*Mulaidiluarlayarkekanan*/animation: slideout 1s forwards;
+   
 }
+
+
+@keyframes slideout {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+}
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Posisikan di tempat semula */
+    }
+}
+
 h4{
     color: whitesmoke;
     letter-spacing: 2px;
@@ -299,7 +356,9 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;
+   
 }
+
 .about-me{
     width: 1130px;
     max-width: 95%;
@@ -518,7 +577,10 @@ h3{
 
 @media only screen and (max-width:400px)
 { 
-    
+    *{
+        font-family: "Lora", serif;
+
+    }
     .home{
        
         background-image: url(wallhp1.png);
