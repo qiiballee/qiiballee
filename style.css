@@ -913,3 +913,126 @@ h3{
         background-clip: border-box;
     }
 }
+ .index3{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.index3 .container{
+    display: flex;
+    flex-direction: row;
+    animation: slideInRight 0.5s ease-in-out;
+}
+.container .sub-con{
+    margin: 20px auto ;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sub-con .set-con{
+    display: flex;
+    height: 400px;
+    width: 1200px;
+    flex-direction: row;
+    border-radius: 20PX;
+    -webkit-border-radius: 20PX;
+    -moz-border-radius: 20PX;
+    -ms-border-radius: 20PX;
+    -o-border-radius: 20PX;
+}
+.container .sub-con .set-con .objekp{
+    width: 600px;
+    height: 600px;
+    padding-right: 5px;
+    margin-left: 95px;
+}
+.container .sub-con .set-con .objeks{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    flex-wrap: wrap;
+}
+.objekp a .prime{
+    width: 600px;
+    height: 404px;
+}
+.objeks a .scond{
+    width: 205px;
+    height: 200px;
+    padding-right: 5px;
+}
+
+a:hover .prime {
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+a:hover .scond{
+    transform:scale(1.8);
+    -webkit-transform:scale(1.8);
+    -moz-transform:scale(1.8);
+    -ms-transform:scale(1.8);
+    -o-transform:scale(1.8);
+}
+@keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @media (max-width: 768px) {
+    a:hover .scond{
+    transform:scale(1.4);
+    -webkit-transform:scale(1.4);
+    -moz-transform:scale(1.4);
+    -ms-transform:scale(1.4);
+    -o-transform:scale(1.4);
+}
+    .index3 .container{
+    display: flex;
+    margin-top: 10px;
+   
+    flex-direction: row;
+    animation: slideInRight 0.5s ease-in-out;
+}
+    .container .sub-con{
+    margin: 10px auto ;
+    justify-content: center;
+    align-items: center;
+     margin-bottom: 50px;
+}
+.sub-con .set-con{
+    display: flex;
+    height: 200px;
+    width: 350px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .sub-con .set-con .objekp{
+    width: 200px;
+    height: 202px;
+    padding-right: 0;
+    margin-left: 0;
+}
+.container .sub-con .set-con .objeks{
+    display: flex;
+    flex-direction: row;
+    width: 220px;
+    flex-wrap: wrap;
+}
+.objekp a .prime{
+    width: 350px;
+    height: 202px;
+}
+.objeks a .scond{
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    justify-content: center;
+}}
