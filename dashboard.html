@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Share+Tech&family=Tagesschrift&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <style>
     /* Darkmode di hp guys*/
     :root {
@@ -287,6 +287,7 @@
 /*ini bagian medsos*/
 .social-card {
   text-align: center;
+  margin-top: 2%;
 }
 
 .social-icons {
@@ -453,11 +454,64 @@ body.dark .social-btn.instagram {
 @media (max-width: 500px) {
   .carousel-slide img {
     height: 150px;
+  }}
+ .card-progress {
+  background-color: #334155;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.card-progress h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  color: white;
+}
+.progress-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+.progress-box {
+  text-align: center;
+  flex: 1 1 200px;
+}
+.circle-water {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+svg {
+  width: 100%;
+  height: 100%;
+}
+.wave {
+  animation: waveMove 4s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes waveMove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-60px); } /* setengah dari panjang wavePath */
+}
+.progress-label {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+@media (max-width: 600px) {
+  .progress-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-
-  </style>
+     </style>
 </head>
 <body>
   <div class="container">
@@ -520,7 +574,101 @@ body.dark .social-btn.instagram {
           <div class="progress-bar"><div class="progress-bar-fill" style="width: 82%;"></div></div>
         </div>
       </div>
-      <div class="card social-card"data-aos="fade-left" data-aos-delay="300">
+      
+      
+<div class="card-progress">
+  <h2>PROGRES JOBDESK</h2>
+  <div class="progress-container">
+
+    <div class="progress-box progress-anim" data-aos="fade-up" data-target="90">
+      <div class="circle-water">
+        <svg viewBox="0 0 120 120">
+  <defs>
+    <clipPath id="clip1">
+      <circle cx="60" cy="60" r="50" />
+    </clipPath>
+  </defs>
+  <circle cx="60" cy="60" r="50" stroke="#ccc" stroke-width="4" fill="none" />
+  <g clip-path="url(#clip1)">
+    <g class="wave" style="transform: translateX(0);">
+  <path id="wavePath" fill="#38bdf8" d="
+    M0,70
+    C30,65 60,75 90,70
+    C120,65 150,75 180,70
+    L180,120
+    L0,120
+    Z
+  "></path>
+</g>
+  </g>
+  <text x="60" y="65" text-anchor="middle" font-size="20" fill="#fff" font-weight="bold">0%</text>
+</svg>
+
+      </div>
+      <div class="progress-label">FULL TIME</div>
+    </div>
+
+    <div class="progress-box progress-anim" data-aos="fade-up" data-target="50">
+      <div class="circle-water">
+        <svg viewBox="0 0 120 120">
+  <defs>
+    <clipPath id="clip1">
+      <circle cx="60" cy="60" r="50" />
+    </clipPath>
+  </defs>
+  <circle cx="60" cy="60" r="50" stroke="#ccc" stroke-width="4" fill="none" />
+  <g clip-path="url(#clip1)">
+    <g class="wave" style="transform: translateX(0);">
+  <path id="wavePath" fill="#38bdf8" d="
+    M0,70
+    C30,65 60,75 90,70
+    C120,65 150,75 180,70
+    L180,120
+    L0,120
+    Z
+  "></path>
+</g>
+  </g>
+  <text x="60" y="65" text-anchor="middle" font-size="20" fill="#fff" font-weight="bold">0%</text>
+</svg>
+
+      </div>
+      <div class="progress-label">FREELANCE </div>
+    </div>
+
+    <div class="progress-box progress-anim" data-aos="fade-up" data-target="43">
+      <div class="circle-water">
+        <svg viewBox="0 0 120 120">
+  <defs>
+    <clipPath id="clip1">
+      <circle cx="60" cy="60" r="50" />
+    </clipPath>
+  </defs>
+  <circle cx="60" cy="60" r="50" stroke="#ccc" stroke-width="4" fill="none" />
+  <g clip-path="url(#clip1)">
+    <g class="wave" style="transform: translateX(0);">
+  <path id="wavePath" fill="#38bdf8" d="
+    M0,70
+    C30,65 60,75 90,70
+    C120,65 150,75 180,70
+    L180,120
+    L0,120
+    Z
+  "></path>
+</g>
+  </g>
+  <text x="60" y="65" text-anchor="middle" font-size="20" fill="#fff" font-weight="bold">0%</text>
+</svg>
+
+      </div>
+      <div class="progress-label">INVESTMENT </div>
+    </div>
+
+    <!-- Tambah lagi jika perlu -->
+
+  </div>
+</div>
+<div class="card social-card"data-aos="fade-left" data-aos-delay="300">
         <h3>Hubungi Saya</h3>
         <div class="social-icons">
           <a href="https://wa.me/6285788898529" target="_blank" class="social-btn whatsapp">
@@ -545,23 +693,53 @@ body.dark .social-btn.instagram {
     </div>
   </div>
 </div>
-<div class="card carousel-card"data-aos="fade-left" data-aos-delay="900">
-  <h3>Proyek Saya</h3>
-  <p class="carousel-desc">Berikut adalah beberapa proyek website yang pernah saya kerjakan, mencakup tampilan antarmuka modern, sistem absensi, dan portal nilai siswa.</p>
-
-   <div class="carousel-container">
-    <div class="carousel-wrapper">
-      <div class="carousel-slide">
-      <img src="proyek.jpg" alt="Proyek 1">
-      <img src="proyek.jpg" alt="Proyek 2">
-      <img src="proyek.jpg" alt="Proyek 3">
-    </div>
-  </div>
-  </div>
-</div>
-
     </main>
   </div>
+
+<script>
+document.querySelectorAll('.progress-box').forEach((box, index) => {
+document.addEventListener('DOMContentLoaded', () => {
+  const svg = box.querySelector('svg');
+  const wave = svg.querySelector('.wave path');
+  const text = svg.querySelector('text');
+  const target = +box.dataset.target;
+  let current = 0;
+
+  const basePath = `
+    M0,100 
+    C30,90 60,110 90,100 
+    C120,90 150,110 180,100 
+    C210,90 240,110 270,100 
+    V120 H0 Z
+  `;
+  wave.setAttribute('d', basePath);
+
+  wave.classList.remove('wave'); void wave.offsetWidth; wave.classList.add('wave');
+  text.textContent = '0%';
+
+  const animate = () => {
+    if (current <= target) {
+      const height = 120 - (current / 100) * 100;
+      const path = `
+        M0 ${height}
+        C30 ${height - 10} 60 ${height + 10} 90 ${height}
+        C120 ${height - 10} 150 ${height + 10} 180 ${height}
+        C210 ${height - 10} 240 ${height + 10} 270 ${height}
+        V120 H0 Z
+      `;
+      wave.setAttribute('d', path);
+      text.textContent = current + '%';
+      current++;
+      setTimeout(animate, 15);
+    } else {
+      text.textContent = target + '%';
+    }
+  };
+
+  animate();
+});
+});
+</script>
 
   <script>
     const toggleBtn = document.getElementById('toggleSidebar');
@@ -623,8 +801,11 @@ body.dark .social-btn.instagram {
 
   setInterval(updatePercentage, 100); 
 </script>
+
 <script>
-  AOS.init();
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({ once: false });
+  });
 </script>
 </body>
 </html>
