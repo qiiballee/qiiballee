@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,9 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Share+Tech&family=Tagesschrift&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Share+Tech&family=Tagesschrift&display=swap"
+    rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <style>
     /* Darkmode di hp guys*/
     :root {
@@ -35,6 +38,7 @@
       --btn-hover: #475569;
       --card-bg: #334155;
     }
+
     /* ini Konfigurasi buat halaman utamanya ya*/
     * {
       margin: 0;
@@ -53,6 +57,7 @@
       display: flex;
       min-height: 100vh;
     }
+
     /*sidebar konfigurasi di device laptop dimen 16:9*/
     .sidebar {
       width: 250px;
@@ -72,7 +77,8 @@
       padding: 0;
       overflow: hidden;
     }
-    /* nah kalo ini bagian logo di sidebarnya*/ 
+
+    /* nah kalo ini bagian logo di sidebarnya*/
     .sidebar img {
       width: 120px;
       height: 120px;
@@ -95,7 +101,8 @@
       text-decoration: none;
       font-weight: 500;
     }
-    /*nah ini main content perbandingan dengan bagian sidebar*/ 
+
+    /*nah ini main content perbandingan dengan bagian sidebar*/
     .main-content {
       flex: 1;
       margin-left: 250px;
@@ -107,6 +114,7 @@
       margin-left: 0;
       width: 100%;
     }
+
     /*mulai dari sini ada header isi dari buttun toggle dan darkmode*/
     header {
       display: flex;
@@ -118,16 +126,18 @@
       position: relative;
       padding-left: 60px;
     }
-    h1{
+
+    h1 {
       animation: porto 2s infinite alternate-reverse;
       font-family: "Share Tech", sans-serif;
     }
 
     @keyframes porto {
-      0%{
+      0% {
         filter: drop-shadow(0 0 0.75rem rgb(242, 242, 242));
       }
-      100%{
+
+      100% {
         filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
       }
     }
@@ -138,11 +148,13 @@
       gap: 10px;
       position: fixed;
       top: 20px;
-      right: 20px; /* ubah dari left ke right */
+      right: 20px;
+      /* ubah dari left ke right */
       z-index: 1001;
     }
 
-    .toggle-btn, .dark-btn {
+    .toggle-btn,
+    .dark-btn {
       background-color: var(--btn-bg);
       border: none;
       color: white;
@@ -150,7 +162,7 @@
       padding: 8px 12px;
       border-radius: 6px;
       cursor: pointer;
-      
+
     }
 
     @media (max-width: 768px) {
@@ -164,11 +176,12 @@
         margin-left: 0;
       }
 
-      .sidebar.hidden + .main-content {
+      .sidebar.hidden+.main-content {
         margin-left: 0;
       }
     }
-/*disini konfigurasi card yang nyelimutin setiap tempat yang ada di foto, skill dll*/
+
+    /*disini konfigurasi card yang nyelimutin setiap tempat yang ada di foto, skill dll*/
     .card {
       background-color: var(--card-bg);
       padding: 20px;
@@ -187,6 +200,7 @@
     .about-text {
       flex: 1 1 300px;
     }
+
     /*bagian foto png yang ada di main-card-tentang saya */
     .image-container {
       flex: 1 1 300px;
@@ -228,6 +242,7 @@
         margin-left: 0;
       }
     }
+
     /* bagian skill nih*/
     .skill-card {
       background-color: var(--card-bg);
@@ -281,184 +296,227 @@
     }
 
     @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
     }
-/*ini bagian medsos*/
-.social-card {
-  text-align: center;
-}
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
+    /*ini bagian medsos*/
+    .social-card {
+      text-align: center;
+    }
 
-.social-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: background-color 0.3s;
-}
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
 
-.social-btn img {
-  width: 24px;
-  height: 24px;
-}
+    .social-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
 
-.social-btn.whatsapp {
-  background-color: #25D366;
-}
+    .social-btn img {
+      width: 24px;
+      height: 24px;
+    }
 
-.social-btn.instagram {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}
+    .social-btn.whatsapp {
+      background-color: #25D366;
+    }
 
-.social-btn:hover {
-  opacity: 0.85;
-}
+    .social-btn.instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
 
-body.dark .social-btn.whatsapp {
-  background-color: #128C7E;
-}
+    .social-btn:hover {
+      opacity: 0.85;
+    }
 
-body.dark .social-btn.instagram {
-  background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
-}
-.rocket-card {
-  text-align: center;
-  overflow: hidden;
-}
+    body.dark .social-btn.whatsapp {
+      background-color: #128C7E;
+    }
 
-.rocket-container {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  margin-top: 20px;
-}
+    body.dark .social-btn.instagram {
+      background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+    }
 
-.rocket-track {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  width: 100%;
-  height: 60px;
-}
+    .rocket-card {
+      text-align: center;
+      overflow: hidden;
+    }
 
-.rocket-wrapper {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: moveRocketWithPercent 6s linear infinite;
-}
+    .rocket-container {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      margin-top: 20px;
+    }
 
-.rocket {
-  height: 60px;
-  z-index: 2;
-}
+    .rocket-track {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 100%;
+      height: 60px;
+    }
 
-.flame {
-  width: 12px;
-  height: 20px;
-  background: radial-gradient(circle, orange 0%, red 80%);
-  border-radius: 50%;
-  opacity: 0.8;
-  margin-top: -5px;
-  animation: flame-flicker 0.2s infinite alternate;
-}
+    .rocket-wrapper {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: moveRocketWithPercent 6s linear infinite;
+    }
 
-.percentage {
-  font-size: 14px;
-  margin-top: 5px;
-  color: var(--text-color);
-}
+    .rocket {
+      height: 60px;
+      z-index: 2;
+    }
 
-@keyframes moveRocketWithPercent {
-  0% { left: 0%; }
-  100% { left: 100%; }
-}
+    .flame {
+      width: 12px;
+      height: 20px;
+      background: radial-gradient(circle, orange 0%, red 80%);
+      border-radius: 50%;
+      opacity: 0.8;
+      margin-top: -5px;
+      animation: flame-flicker 0.2s infinite alternate;
+    }
 
-@keyframes flame-flicker {
-  from { transform: scaleY(1); opacity: 1; }
-  to { transform: scaleY(1.3); opacity: 0.6; }
-}
-.carousel-card {
-  text-align: center;
-}
+    .percentage {
+      font-size: 14px;
+      margin-top: 5px;
+      color: var(--text-color);
+    }
 
-.carousel-desc {
-  margin-bottom: 15px;
-  color: var(--text-color);
-  font-size: 1rem;
-}
-.carousel-container {
-  width: 100%;
-  max-width: 700px;    /* batas lebar maksimum */
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+    @keyframes moveRocketWithPercent {
+      0% {
+        left: 0%;
+      }
 
+      100% {
+        left: 100%;
+      }
+    }
 
-.carousel-wrapper {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  background-color: #f9fafb;
-}
+    @keyframes flame-flicker {
+      from {
+        transform: scaleY(1);
+        opacity: 1;
+      }
 
-.carousel-slide {
-  display: flex;
-  width: 300%; 
-  height: 100%;
-  animation: slideCarousel 12s infinite;
-}
-.carousel-slide img {
-  width: 100%;
-  max-width: 100%;      
-  height: auto;         
-  object-fit: contain;  
-  flex-shrink: 0;
-  background-color: white;
-  border-radius: 12px;
-}
+      to {
+        transform: scaleY(1.3);
+        opacity: 0.6;
+      }
+    }
+
+    .carousel-card {
+      text-align: center;
+    }
+
+    .carousel-desc {
+      margin-bottom: 15px;
+      color: var(--text-color);
+      font-size: 1rem;
+    }
+
+    .carousel-container {
+      width: 100%;
+      max-width: 700px;
+      /* batas lebar maksimum */
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
 
+    .carousel-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background-color: #f9fafb;
+    }
+
+    .carousel-slide {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      animation: slideCarousel 12s infinite;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      flex-shrink: 0;
+      background-color: white;
+      border-radius: 12px;
+    }
 
 
 
-@keyframes slideCarousel {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(0); }
-
-  36% { transform: translateX(-100%); }
-  66% { transform: translateX(-100%); }
-
-  69% { transform: translateX(-200%); }
-  99% { transform: translateX(-200%); }
-
-  100% { transform: translateX(0); }
-}
-@media (max-width: 500px) {
-  .carousel-slide img {
-    height: 150px;
-  }
-}
 
 
-/*video sett*/
-  .video-card {
+    @keyframes slideCarousel {
+      0% {
+        transform: translateX(0);
+      }
+
+      33% {
+        transform: translateX(0);
+      }
+
+      36% {
+        transform: translateX(-100%);
+      }
+
+      66% {
+        transform: translateX(-100%);
+      }
+
+      69% {
+        transform: translateX(-200%);
+      }
+
+      99% {
+        transform: translateX(-200%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .carousel-slide img {
+        height: 150px;
+      }
+    }
+
+
+    /*video sett*/
+    .video-card {
       background-color: var(--card-bg);
       margin-bottom: 30px;
       padding: 15px;
@@ -474,7 +532,8 @@ body.dark .social-btn.instagram {
     .video-wrapper {
       position: relative;
       width: 100%;
-      padding-top: 56.25%; /* Rasio 16:9 (9 / 16 = 0.5625) */
+      padding-top: 56.25%;
+      /* Rasio 16:9 (9 / 16 = 0.5625) */
       border-radius: 8px;
       overflow: hidden;
     }
@@ -494,8 +553,54 @@ body.dark .social-btn.instagram {
       }
     }
 
+    .dropdown {
+      text-align: left;
+    }
+
+    .dropdown-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .dropbtn {
+      background: none;
+      border: none;
+      color: var(--link-color);
+      font-weight: 500;
+      font-size: 1rem;
+      cursor: pointer;
+      padding: 1px 20px;
+      text-align: center;
+    }
+
+    .dropdown-content {
+      display: none;
+      flex-direction: column;
+      background-color: transparent;
+      padding-left: 0;
+      align-items: center;
+    }
+
+    .dropdown-content a {
+      margin: 5px 0;
+      font-size: 0.95rem;
+      color: var(--link-color);
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    .dropdown-content a:hover {
+      color: var(--hover-color);
+    }
+
+    .dropdown.open .dropdown-content {
+      display: flex;
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
     <aside class="sidebar" id="sidebar">
@@ -505,31 +610,44 @@ body.dark .social-btn.instagram {
         <a href="dashboard.html">HOME</a>
         <a href="proyek.html">PROJECT</a>
         <a href="research.html">MINI RESEARCH</a>
+
+        <div class="dropdown-wrapper">
+          <div class="dropdown">
+            <button class="dropbtn">EDUCATION ▾</button>
+            <div class="dropdown-content">
+              <a href="eduhtml.html">HTML</a>
+              <a href="educss.html">CSS</a>
+              <a href="edujs.html">JS</a>
+              <a href="eduhtml.html">REACTJS</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </aside>
+    <main class="main-content" id="mainContent">
+      <header>
+        <h1>PROJECT</h1>
+        <div class="header-controls">
+          <button id="toggleSidebar" class="toggle-btn">☰</button>
+          <button id="darkModeToggle" class="dark-btn">🌙</button>
+        </div>
+      </header>
 
-<main class="main-content" id="mainContent">
-  <header>
-    <h1>PROJECT</h1>
-    <div class="header-controls">
-      <button id="toggleSidebar" class="toggle-btn">☰</button>
-      <button id="darkModeToggle" class="dark-btn">🌙</button>
-    </div>
-  </header>
-
-  <div class="video-card">
-      <h3>User & Admin - Database Santri Dalam Kota</h3>
-      <div class="video-wrapper">
-        <iframe src="https://drive.google.com/file/d/1t0zzesRoISNS_C9Q5DcHYoGaBIjCJ34p/preview" allow="autoplay"></iframe>
+      <div class="video-card">
+        <h3>User & Admin - Database Santri Dalam Kota</h3>
+        <div class="video-wrapper">
+          <iframe src="https://drive.google.com/file/d/1t0zzesRoISNS_C9Q5DcHYoGaBIjCJ34p/preview"
+            allow="autoplay"></iframe>
+        </div>
       </div>
-    </div>
-  <div class="video-card">
-      <h3>Video Proyek 1 - Absensi Sekolah</h3>
-      <div class="video-wrapper">
-        <iframe src="https://drive.google.com/file/d/1sqsL2joJhCgcUC9zPQHGgfZn6ZlR1Xyi/preview" allow="autoplay"></iframe>
+      <div class="video-card">
+        <h3>Video Proyek 1 - Absensi Sekolah</h3>
+        <div class="video-wrapper">
+          <iframe src="https://drive.google.com/file/d/1sqsL2joJhCgcUC9zPQHGgfZn6ZlR1Xyi/preview"
+            allow="autoplay"></iframe>
+        </div>
       </div>
-    </div>
-</main>
+    </main>
 
   </div>
 
@@ -579,22 +697,33 @@ body.dark .social-btn.instagram {
   </script>
 
   <script>
-  const rocketWrapper = document.querySelector('.rocket-wrapper');
-  const percentageText = document.getElementById('percentage');
+    const rocketWrapper = document.querySelector('.rocket-wrapper');
+    const percentageText = document.getElementById('percentage');
 
-  function updatePercentage() {
-    const container = document.querySelector('.rocket-track');
-    const wrapper = rocketWrapper;
-    const containerWidth = container.offsetWidth;
-    const wrapperLeft = parseFloat(getComputedStyle(wrapper).left || 0);
-    const percent = Math.min(100, Math.round((wrapperLeft / containerWidth) * 100));
-    percentageText.textContent = percent + '%';
-  }
+    function updatePercentage() {
+      const container = document.querySelector('.rocket-track');
+      const wrapper = rocketWrapper;
+      const containerWidth = container.offsetWidth;
+      const wrapperLeft = parseFloat(getComputedStyle(wrapper).left || 0);
+      const percent = Math.min(100, Math.round((wrapperLeft / containerWidth) * 100));
+      percentageText.textContent = percent + '%';
+    }
 
-  setInterval(updatePercentage, 100); 
-</script>
-<script>
-  AOS.init();
-</script>
+    setInterval(updatePercentage, 100); 
+  </script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dropbtn = document.querySelector('.dropbtn');
+      const dropdown = document.querySelector('.dropdown');
+
+      dropbtn.addEventListener('click', () => {
+        dropdown.classList.toggle('open');
+      });
+    });
+  </script>
 </body>
+
 </html>
