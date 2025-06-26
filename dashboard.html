@@ -9,7 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Share+Tech&family=Tagesschrift&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Share+Tech&family=Tagesschrift&display=swap"
+    rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <style>
@@ -35,6 +37,7 @@
       --btn-hover: #475569;
       --card-bg: #334155;
     }
+
     /* ini Konfigurasi buat halaman utamanya ya*/
     * {
       margin: 0;
@@ -53,6 +56,7 @@
       display: flex;
       min-height: 100vh;
     }
+
     /*sidebar konfigurasi di device laptop dimen 16:9*/
     .sidebar {
       width: 250px;
@@ -72,7 +76,8 @@
       padding: 0;
       overflow: hidden;
     }
-    /* nah kalo ini bagian logo di sidebarnya*/ 
+
+    /* nah kalo ini bagian logo di sidebarnya*/
     .sidebar img {
       width: 120px;
       height: 120px;
@@ -95,7 +100,8 @@
       text-decoration: none;
       font-weight: 500;
     }
-    /*nah ini main content perbandingan dengan bagian sidebar*/ 
+
+    /*nah ini main content perbandingan dengan bagian sidebar*/
     .main-content {
       flex: 1;
       margin-left: 250px;
@@ -107,6 +113,7 @@
       margin-left: 0;
       width: 100%;
     }
+
     /*mulai dari sini ada header isi dari buttun toggle dan darkmode*/
     header {
       display: flex;
@@ -118,16 +125,18 @@
       position: relative;
       padding-left: 60px;
     }
-    h1{
+
+    h1 {
       animation: porto 2s infinite alternate-reverse;
       font-family: "Share Tech", sans-serif;
     }
 
     @keyframes porto {
-      0%{
+      0% {
         filter: drop-shadow(0 0 0.75rem rgb(242, 242, 242));
       }
-      100%{
+
+      100% {
         filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
       }
     }
@@ -138,11 +147,13 @@
       gap: 10px;
       position: fixed;
       top: 20px;
-      right: 20px; /* ubah dari left ke right */
+      right: 20px;
+      /* ubah dari left ke right */
       z-index: 1001;
     }
 
-    .toggle-btn, .dark-btn {
+    .toggle-btn,
+    .dark-btn {
       background-color: var(--btn-bg);
       border: none;
       color: white;
@@ -150,7 +161,7 @@
       padding: 8px 12px;
       border-radius: 6px;
       cursor: pointer;
-      
+
     }
 
     @media (max-width: 768px) {
@@ -164,11 +175,12 @@
         margin-left: 0;
       }
 
-      .sidebar.hidden + .main-content {
+      .sidebar.hidden+.main-content {
         margin-left: 0;
       }
     }
-/*disini konfigurasi card yang nyelimutin setiap tempat yang ada di foto, skill dll*/
+
+    /*disini konfigurasi card yang nyelimutin setiap tempat yang ada di foto, skill dll*/
     .card {
       background-color: var(--card-bg);
       padding: 20px;
@@ -187,6 +199,7 @@
     .about-text {
       flex: 1 1 300px;
     }
+
     /*bagian foto png yang ada di main-card-tentang saya */
     .image-container {
       flex: 1 1 300px;
@@ -228,6 +241,7 @@
         margin-left: 0;
       }
     }
+
     /* bagian skill nih*/
     .skill-card {
       background-color: var(--card-bg);
@@ -281,238 +295,344 @@
     }
 
     @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
     }
-/*ini bagian medsos*/
-.social-card {
-  text-align: center;
-  margin-top: 2%;
-}
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
+    /*ini bagian medsos*/
+    .social-card {
+      text-align: center;
+      margin-top: 2%;
+    }
 
-.social-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: background-color 0.3s;
-}
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
 
-.social-btn img {
-  width: 24px;
-  height: 24px;
-}
+    .social-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
 
-.social-btn.whatsapp {
-  background-color: #25D366;
-}
+    .social-btn img {
+      width: 24px;
+      height: 24px;
+    }
 
-.social-btn.instagram {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}
+    .social-btn.whatsapp {
+      background-color: #25D366;
+    }
 
-.social-btn:hover {
-  opacity: 0.85;
-}
+    .social-btn.instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
 
-body.dark .social-btn.whatsapp {
-  background-color: #128C7E;
-}
+    .social-btn:hover {
+      opacity: 0.85;
+    }
 
-body.dark .social-btn.instagram {
-  background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
-}
-.rocket-card {
-  text-align: center;
-  overflow: hidden;
-}
+    body.dark .social-btn.whatsapp {
+      background-color: #128C7E;
+    }
 
-.rocket-container {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  margin-top: 20px;
-}
+    body.dark .social-btn.instagram {
+      background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+    }
 
-.rocket-track {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  width: 100%;
-  height: 60px;
-}
+    .rocket-card {
+      text-align: center;
+      overflow: hidden;
+    }
 
-.rocket-wrapper {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: moveRocketWithPercent 6s linear infinite;
-}
+    .rocket-container {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      margin-top: 20px;
+    }
 
-.rocket {
-  height: 60px;
-  z-index: 2;
-}
+    .rocket-track {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 100%;
+      height: 60px;
+    }
 
-.flame {
-  width: 12px;
-  height: 20px;
-  background: radial-gradient(circle, orange 0%, red 80%);
-  border-radius: 50%;
-  opacity: 0.8;
-  margin-top: -5px;
-  animation: flame-flicker 0.2s infinite alternate;
-}
+    .rocket-wrapper {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: moveRocketWithPercent 6s linear infinite;
+    }
 
-.percentage {
-  font-size: 14px;
-  margin-top: 5px;
-  color: var(--text-color);
-}
+    .rocket {
+      height: 60px;
+      z-index: 2;
+    }
 
-@keyframes moveRocketWithPercent {
-  0% { left: 0%; }
-  100% { left: 100%; }
-}
+    .flame {
+      width: 12px;
+      height: 20px;
+      background: radial-gradient(circle, orange 0%, red 80%);
+      border-radius: 50%;
+      opacity: 0.8;
+      margin-top: -5px;
+      animation: flame-flicker 0.2s infinite alternate;
+    }
 
-@keyframes flame-flicker {
-  from { transform: scaleY(1); opacity: 1; }
-  to { transform: scaleY(1.3); opacity: 0.6; }
-}
-.carousel-card {
-  text-align: center;
-}
+    .percentage {
+      font-size: 14px;
+      margin-top: 5px;
+      color: var(--text-color);
+    }
 
-.carousel-desc {
-  margin-bottom: 15px;
-  color: var(--text-color);
-  font-size: 1rem;
-}
-.carousel-container {
-  width: 100%;
-  max-width: 700px;    /* batas lebar maksimum */
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+    @keyframes moveRocketWithPercent {
+      0% {
+        left: 0%;
+      }
 
+      100% {
+        left: 100%;
+      }
+    }
 
-.carousel-wrapper {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  background-color: #f9fafb;
-}
+    @keyframes flame-flicker {
+      from {
+        transform: scaleY(1);
+        opacity: 1;
+      }
 
-.carousel-slide {
-  display: flex;
-  width: 300%; 
-  height: 100%;
-  animation: slideCarousel 12s infinite;
-}
-.carousel-slide img {
-  width: 100%;
-  max-width: 100%;      
-  height: auto;         
-  object-fit: contain;  
-  flex-shrink: 0;
-  background-color: white;
-  border-radius: 12px;
-}
+      to {
+        transform: scaleY(1.3);
+        opacity: 0.6;
+      }
+    }
+
+    .carousel-card {
+      text-align: center;
+    }
+
+    .carousel-desc {
+      margin-bottom: 15px;
+      color: var(--text-color);
+      font-size: 1rem;
+    }
+
+    .carousel-container {
+      width: 100%;
+      max-width: 700px;
+      /* batas lebar maksimum */
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
 
+    .carousel-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background-color: #f9fafb;
+    }
+
+    .carousel-slide {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      animation: slideCarousel 12s infinite;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      flex-shrink: 0;
+      background-color: white;
+      border-radius: 12px;
+    }
 
 
 
-@keyframes slideCarousel {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(0); }
 
-  36% { transform: translateX(-100%); }
-  66% { transform: translateX(-100%); }
 
-  69% { transform: translateX(-200%); }
-  99% { transform: translateX(-200%); }
+    @keyframes slideCarousel {
+      0% {
+        transform: translateX(0);
+      }
 
-  100% { transform: translateX(0); }
-}
-@media (max-width: 500px) {
-  .carousel-slide img {
-    height: 150px;
-  }}
- .card-progress {
-  background-color: #334155;
-  border-radius: 12px;
-  padding: 20px;
-  width: 100%;
-  margin: 0 auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-.card-progress h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 1.5rem;
-  color: white;
-}
-.progress-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
-}
-.progress-box {
-  text-align: center;
-  flex: 1 1 200px;
-}
-.circle-water {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;
-}
-svg {
-  width: 100%;
-  height: 100%;
-}
-.wave {
-  animation: waveMove 4s linear infinite;
-  transform-box: fill-box;
-  transform-origin: center;
-}
+      33% {
+        transform: translateX(0);
+      }
 
-@keyframes waveMove {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-60px); } /* setengah dari panjang wavePath */
-}
-.progress-label {
-  margin-top: 10px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: white;
-}
-@media (max-width: 600px) {
-  .progress-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+      36% {
+        transform: translateX(-100%);
+      }
 
-     </style>
+      66% {
+        transform: translateX(-100%);
+      }
+
+      69% {
+        transform: translateX(-200%);
+      }
+
+      99% {
+        transform: translateX(-200%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .carousel-slide img {
+        height: 150px;
+      }
+    }
+
+    .card-progress {
+      background-color: #334155;
+      border-radius: 12px;
+      padding: 20px;
+      width: 100%;
+      margin: 0 auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-progress h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .progress-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .progress-box {
+      text-align: center;
+      flex: 1 1 200px;
+    }
+
+    .circle-water {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .wave {
+      animation: waveMove 4s linear infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    @keyframes waveMove {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-60px);
+      }
+
+      /* setengah dari panjang wavePath */
+    }
+
+    .progress-label {
+      margin-top: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .progress-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .dropdown {
+      text-align: left;
+    }
+
+    .dropdown-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .dropbtn {
+      background: none;
+      border: none;
+      color: var(--link-color);
+      font-weight: 500;
+      font-size: 1rem;
+      cursor: pointer;
+      padding: 1px 20px;
+      text-align: center;
+    }
+
+    .dropdown-content {
+      display: none;
+      flex-direction: column;
+      background-color: transparent;
+      padding-left: 0;
+      align-items: center;
+    }
+
+    .dropdown-content a {
+      margin: 5px 0;
+      font-size: 0.95rem;
+      color: var(--link-color);
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    .dropdown-content a:hover {
+      color: var(--hover-color);
+    }
+
+    .dropdown.open .dropdown-content {
+      display: flex;
+    }
+  </style>
 </head>
+
 <body>
   <div class="container">
     <aside class="sidebar" id="sidebar">
@@ -522,9 +642,20 @@ svg {
         <a href="dashboard.html">HOME</a>
         <a href="proyek.html">PROJECT</a>
         <a href="research.html">MINI RESEARCH</a>
+
+        <div class="dropdown-wrapper">
+          <div class="dropdown">
+            <button class="dropbtn">EDUCATION ▾</button>
+            <div class="dropdown-content">
+              <a href="eduhtml.html">HTML</a>
+              <a href="educss.html">CSS</a>
+              <a href="edujs.html">JS</a>
+              <a href="eduhtml.html">REACTJS</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </aside>
-
     <main class="main-content" id="mainContent">
       <header>
         <h1>PORTOFOLIO</h1>
@@ -533,65 +664,75 @@ svg {
           <button id="darkModeToggle" class="dark-btn">🌙</button>
         </div>
       </header>
-
       <div class="card about-card" data-aos="fade-left" data-aos-delay="300">
         <div class="about-text">
           <h3>Tentang Saya</h3>
           <p id="typing-text">
-            Saya adalah Muhammad iqbal seorang web developer dengan minat pada antarmuka pengguna dan pengalaman pengguna.
-            Saya memiliki pengalaman dalam membuat website interaktif dan responsif menggunakan HTML, CSS, JavaScript, dan PHP.
+            Saya adalah Muhammad iqbal seorang web developer dengan minat pada antarmuka pengguna dan pengalaman
+            pengguna.
+            Saya memiliki pengalaman dalam membuat website interaktif dan responsif menggunakan HTML, CSS, JavaScript,
+            dan PHP.
           </p>
         </div>
         <div class="image-container">
           <img src="prp.png" alt="Foto Full Body" />
         </div>
       </div>
-
-      <div class="card skill-card"data-aos="fade-left" data-aos-delay="500">
+      <div class="card skill-card" data-aos="fade-left" data-aos-delay="500">
         <h3>Skill Saya</h3>
         <div class="skill-item">
           <div class="skill-label"><span>Developer Web. (Frontend & Backend)</span><span>88%</span></div>
-          <div class="progress-bar"><div class="progress-bar-fill" style="width: 88%;"></div></div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill" style="width: 88%;"></div>
+          </div>
         </div>
         <div class="skill-item">
           <div class="skill-label"><span>Digital Marketer (Online shop)</span><span>85%</span></div>
-          <div class="progress-bar"><div class="progress-bar-fill" style="width: 85%;"></div></div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill" style="width: 85%;"></div>
+          </div>
         </div>
         <div class="skill-item">
           <div class="skill-label"><span>Technician (Repair & Electronics Manufacturing)</span><span>75%</span></div>
-          <div class="progress-bar"><div class="progress-bar-fill" style="width: 75%;"></div></div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill" style="width: 75%;"></div>
+          </div>
         </div>
         <div class="skill-item">
           <div class="skill-label"><span>Programmer PLC</span><span>89%</span></div>
-          <div class="progress-bar"><div class="progress-bar-fill" style="width: 89%;"></div></div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill" style="width: 89%;"></div>
+          </div>
         </div>
         <div class="skill-item">
           <div class="skill-label"><span>Data Analyst</span><span>70%</span></div>
-          <div class="progress-bar"><div class="progress-bar-fill" style="width: 70%;"></div></div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill" style="width: 70%;"></div>
+          </div>
         </div>
         <div class="skill-item">
           <div class="skill-label"><span>Editor (Canva & Adobe premier)</span><span>82%</span></div>
-          <div class="progress-bar"><div class="progress-bar-fill" style="width: 82%;"></div></div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill" style="width: 82%;"></div>
+          </div>
         </div>
       </div>
-      
-      
-<div class="card-progress">
-  <h2>PROGRES JOBDESK</h2>
-  <div class="progress-container">
+      <div class="card-progress">
+        <h2>PROGRES JOBDESK</h2>
+        <div class="progress-container">
 
-    <div class="progress-box progress-anim" data-aos="fade-up" data-target="90">
-      <div class="circle-water">
-        <svg viewBox="0 0 120 120">
-  <defs>
-    <clipPath id="clip1">
-      <circle cx="60" cy="60" r="50" />
-    </clipPath>
-  </defs>
-  <circle cx="60" cy="60" r="50" stroke="#ccc" stroke-width="4" fill="none" />
-  <g clip-path="url(#clip1)">
-    <g class="wave" style="transform: translateX(0);">
-  <path id="wavePath" fill="#38bdf8" d="
+          <div class="progress-box progress-anim" data-aos="fade-up" data-target="90">
+            <div class="circle-water">
+              <svg viewBox="0 0 120 120">
+                <defs>
+                  <clipPath id="clip1">
+                    <circle cx="60" cy="60" r="50" />
+                  </clipPath>
+                </defs>
+                <circle cx="60" cy="60" r="50" stroke="#ccc" stroke-width="4" fill="none" />
+                <g clip-path="url(#clip1)">
+                  <g class="wave" style="transform: translateX(0);">
+                    <path id="wavePath" fill="#38bdf8" d="
     M0,70
     C30,65 60,75 90,70
     C120,65 150,75 180,70
@@ -599,27 +740,27 @@ svg {
     L0,120
     Z
   "></path>
-</g>
-  </g>
-  <text x="60" y="65" text-anchor="middle" font-size="20" fill="#fff" font-weight="bold">0%</text>
-</svg>
+                  </g>
+                </g>
+                <text x="60" y="65" text-anchor="middle" font-size="20" fill="#fff" font-weight="bold">0%</text>
+              </svg>
 
-      </div>
-      <div class="progress-label">FULL TIME</div>
-    </div>
+            </div>
+            <div class="progress-label">FULL TIME</div>
+          </div>
 
-    <div class="progress-box progress-anim" data-aos="fade-up" data-target="50">
-      <div class="circle-water">
-        <svg viewBox="0 0 120 120">
-  <defs>
-    <clipPath id="clip1">
-      <circle cx="60" cy="60" r="50" />
-    </clipPath>
-  </defs>
-  <circle cx="60" cy="60" r="50" stroke="#ccc" stroke-width="4" fill="none" />
-  <g clip-path="url(#clip1)">
-    <g class="wave" style="transform: translateX(0);">
-  <path id="wavePath" fill="#38bdf8" d="
+          <div class="progress-box progress-anim" data-aos="fade-up" data-target="50">
+            <div class="circle-water">
+              <svg viewBox="0 0 120 120">
+                <defs>
+                  <clipPath id="clip1">
+                    <circle cx="60" cy="60" r="50" />
+                  </clipPath>
+                </defs>
+                <circle cx="60" cy="60" r="50" stroke="#ccc" stroke-width="4" fill="none" />
+                <g clip-path="url(#clip1)">
+                  <g class="wave" style="transform: translateX(0);">
+                    <path id="wavePath" fill="#38bdf8" d="
     M0,70
     C30,65 60,75 90,70
     C120,65 150,75 180,70
@@ -627,27 +768,27 @@ svg {
     L0,120
     Z
   "></path>
-</g>
-  </g>
-  <text x="60" y="65" text-anchor="middle" font-size="20" fill="#fff" font-weight="bold">0%</text>
-</svg>
+                  </g>
+                </g>
+                <text x="60" y="65" text-anchor="middle" font-size="20" fill="#fff" font-weight="bold">0%</text>
+              </svg>
 
-      </div>
-      <div class="progress-label">FREELANCE </div>
-    </div>
+            </div>
+            <div class="progress-label">FREELANCE </div>
+          </div>
 
-    <div class="progress-box progress-anim" data-aos="fade-up" data-target="43">
-      <div class="circle-water">
-        <svg viewBox="0 0 120 120">
-  <defs>
-    <clipPath id="clip1">
-      <circle cx="60" cy="60" r="50" />
-    </clipPath>
-  </defs>
-  <circle cx="60" cy="60" r="50" stroke="#ccc" stroke-width="4" fill="none" />
-  <g clip-path="url(#clip1)">
-    <g class="wave" style="transform: translateX(0);">
-  <path id="wavePath" fill="#38bdf8" d="
+          <div class="progress-box progress-anim" data-aos="fade-up" data-target="43">
+            <div class="circle-water">
+              <svg viewBox="0 0 120 120">
+                <defs>
+                  <clipPath id="clip1">
+                    <circle cx="60" cy="60" r="50" />
+                  </clipPath>
+                </defs>
+                <circle cx="60" cy="60" r="50" stroke="#ccc" stroke-width="4" fill="none" />
+                <g clip-path="url(#clip1)">
+                  <g class="wave" style="transform: translateX(0);">
+                    <path id="wavePath" fill="#38bdf8" d="
     M0,70
     C30,65 60,75 90,70
     C120,65 150,75 180,70
@@ -655,91 +796,92 @@ svg {
     L0,120
     Z
   "></path>
-</g>
-  </g>
-  <text x="60" y="65" text-anchor="middle" font-size="20" fill="#fff" font-weight="bold">0%</text>
-</svg>
+                  </g>
+                </g>
+                <text x="60" y="65" text-anchor="middle" font-size="20" fill="#fff" font-weight="bold">0%</text>
+              </svg>
 
+            </div>
+            <div class="progress-label">INVESTMENT </div>
+          </div>
+
+          <!-- Tambah lagi jika perlu -->
+
+        </div>
       </div>
-      <div class="progress-label">INVESTMENT </div>
-    </div>
-
-    <!-- Tambah lagi jika perlu -->
-
-  </div>
-</div>
-<div class="card social-card"data-aos="fade-left" data-aos-delay="300">
+      <div class="card social-card" data-aos="fade-left" data-aos-delay="300">
         <h3>Hubungi Saya</h3>
         <div class="social-icons">
           <a href="https://wa.me/6285788898529" target="_blank" class="social-btn whatsapp">
             <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
             <span>WhatsApp</span>
           </a>
-          <a href="https://www.instagram.com/miservices_?igsh=NnhtdDYwa2NoN2w4" target="_blank" class="social-btn instagram">
+          <a href="https://www.instagram.com/miservices_?igsh=NnhtdDYwa2NoN2w4" target="_blank"
+            class="social-btn instagram">
             <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" />
             <span>Instagram</span>
           </a>
         </div>
       </div>
-      <div class="card rocket-card"data-aos="fade-left" data-aos-delay="600">
-  <h3>Permisi Roket Lewat 🚀</h3>
-  <div class="rocket-container">
-    <div class="rocket-track">
-      <div class="rocket-wrapper">
-        <img src="https://img.icons8.com/emoji/96/rocket-emji.png" class="rocket" alt="Roket" />
-        <div class="flame"></div>
-        <div class="percentage" id="percentage">0%</div>
+      <div class="card rocket-card" data-aos="fade-left" data-aos-delay="600">
+        <h3>Permisi Roket Lewat 🚀</h3>
+        <div class="rocket-container">
+          <div class="rocket-track">
+            <div class="rocket-wrapper">
+              <img src="https://img.icons8.com/emoji/96/rocket-emji.png" class="rocket" alt="Roket" />
+              <div class="flame"></div>
+              <div class="percentage" id="percentage">0%</div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
     </main>
   </div>
 
-<script>
-document.querySelectorAll('.progress-box').forEach((box, index) => {
-document.addEventListener('DOMContentLoaded', () => {
-  const svg = box.querySelector('svg');
-  const wave = svg.querySelector('.wave path');
-  const text = svg.querySelector('text');
-  const target = +box.dataset.target;
-  let current = 0;
+  <script>
+    document.querySelectorAll('.progress-box').forEach((box, index) => {
+      document.addEventListener('DOMContentLoaded', () => {
+        const svg = box.querySelector('svg');
+        const wave = svg.querySelector('.wave path');
+        const text = svg.querySelector('text');
+        const target = +box.dataset.target;
+        let current = 0;
 
-  const basePath = `
+        const basePath = `
     M0,100 
     C30,90 60,110 90,100 
     C120,90 150,110 180,100 
     C210,90 240,110 270,100 
     V120 H0 Z
   `;
-  wave.setAttribute('d', basePath);
+        wave.setAttribute('d', basePath);
 
-  wave.classList.remove('wave'); void wave.offsetWidth; wave.classList.add('wave');
-  text.textContent = '0%';
+        wave.classList.remove('wave'); void wave.offsetWidth; wave.classList.add('wave');
+        text.textContent = '0%';
 
-  const animate = () => {
-    if (current <= target) {
-      const height = 120 - (current / 100) * 100;
-      const path = `
+        const animate = () => {
+          if (current <= target) {
+            const height = 120 - (current / 100) * 100;
+            const path = `
         M0 ${height}
         C30 ${height - 10} 60 ${height + 10} 90 ${height}
         C120 ${height - 10} 150 ${height + 10} 180 ${height}
         C210 ${height - 10} 240 ${height + 10} 270 ${height}
         V120 H0 Z
       `;
-      wave.setAttribute('d', path);
-      text.textContent = current + '%';
-      current++;
-      setTimeout(animate, 15);
-    } else {
-      text.textContent = target + '%';
-    }
-  };
+            wave.setAttribute('d', path);
+            text.textContent = current + '%';
+            current++;
+            setTimeout(animate, 15);
+          } else {
+            text.textContent = target + '%';
+          }
+        };
 
-  animate();
-});
-});
-</script>
+        animate();
+      });
+    });
+  </script>
 
   <script>
     const toggleBtn = document.getElementById('toggleSidebar');
@@ -787,25 +929,37 @@ document.addEventListener('DOMContentLoaded', () => {
   </script>
 
   <script>
-  const rocketWrapper = document.querySelector('.rocket-wrapper');
-  const percentageText = document.getElementById('percentage');
+    const rocketWrapper = document.querySelector('.rocket-wrapper');
+    const percentageText = document.getElementById('percentage');
 
-  function updatePercentage() {
-    const container = document.querySelector('.rocket-track');
-    const wrapper = rocketWrapper;
-    const containerWidth = container.offsetWidth;
-    const wrapperLeft = parseFloat(getComputedStyle(wrapper).left || 0);
-    const percent = Math.min(100, Math.round((wrapperLeft / containerWidth) * 100));
-    percentageText.textContent = percent + '%';
-  }
+    function updatePercentage() {
+      const container = document.querySelector('.rocket-track');
+      const wrapper = rocketWrapper;
+      const containerWidth = container.offsetWidth;
+      const wrapperLeft = parseFloat(getComputedStyle(wrapper).left || 0);
+      const percent = Math.min(100, Math.round((wrapperLeft / containerWidth) * 100));
+      percentageText.textContent = percent + '%';
+    }
 
-  setInterval(updatePercentage, 100); 
-</script>
+    setInterval(updatePercentage, 100); 
+  </script>
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    AOS.init({ once: false });
-  });
-</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({ once: false });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dropbtn = document.querySelector('.dropbtn');
+      const dropdown = document.querySelector('.dropdown');
+
+      dropbtn.addEventListener('click', () => {
+        dropdown.classList.toggle('open');
+      });
+    });
+  </script>
+
 </body>
+
 </html>
